@@ -1,0 +1,16 @@
+[
+    {
+        "url": "/users",
+        "method": "GET",
+        "expectedStatus": 200,
+        "expectedField": ["id", "name"]
+    },
+
+    {
+        "url": "/users",
+        "method": "POST",
+        "requestBody": {"name": "Exemplo", "email": "exemplo@gmail.com"},
+        "expectedStatus": 201,
+        "expectedField": ["id", "name", "email"]
+    }
+]
